@@ -29,8 +29,13 @@ class CompletionsController extends Controller
                     return view('user.play');
                 }
             }
-            else{
-             return view('user.play');
+            if($bill_type ==1){
+                if(Auth::user()->hasCreditCard()->exists()){
+                    return view('user.play');
+                }
+                else{
+                    return back()->with('error','You have no active credit card details, add payment details to continue');
+                }
             }
         }
         else{

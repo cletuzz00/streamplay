@@ -73,4 +73,8 @@ class User extends Authenticatable
     {
         return $this->hasOne(UserBill::class,'user_id');
     }
+    public function hasCreditCard()
+    {
+        return $this->hasOne(UserCreditCard::class,'user_id');
+    }
 }

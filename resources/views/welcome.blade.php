@@ -40,19 +40,19 @@
                               <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
                            </div>
                         </a>
-                        <a class="navbar-brand" href="index.html"> <img class="img-fluid logo" src="images/logo.png"
+                        <a class="navbar-brand" href="{{route('login')}}"> <img class="img-fluid logo" src="images/logo.png"
                            alt="hit400" /> </a>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                            <div class="menu-main-menu-container">
                               <ul id="top-menu" class="navbar-nav ml-auto">
                                  <li class="menu-item">
-                                    <a href="index.html">Home</a>
+                                    <a href="{{route('login')}}">Home</a>
                                  </li>
                                  <li class="menu-item">
                                     <a href="{{route('login')}}">Tv Shows</a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="movie-category.html">Movies</a>
+                                    <a href="{{route('login')}}">Movies</a>
                                  </li>
                               </ul>
                            </div>
@@ -3375,7 +3375,7 @@
                   <div class="col-lg-3 col-md-4">
                      <ul class="f-link list-unstyled mb-0">
                         <li><a href="#">About Us</a></li>
-                        <li><a href="movie-category.html">Movies</a></li>
+                        <li><a href="{{route('login')}}">Movies</a></li>
                         <li><a href="{{route('login')}}">Tv Shows</a></li>
                         <li><a href="#">Coporate Information</a></li>
                      </ul>

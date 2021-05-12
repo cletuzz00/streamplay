@@ -30,4 +30,10 @@ Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/play', [App\Http\Controllers\CompletionsController::class,'index'])->name('play');
 Route::post('completions', [App\Http\Controllers\CompletionsController::class,'store'])->name('completions');
+Route::post('/user/payment', [App\Http\Controllers\UserController::class,'makepayment'])->name('user-makepayment');
+Route::get('/user/statement', [App\Http\Controllers\UserController::class, 'statement'])->name('user-statement');
+Route::get('/user/credit/card', [App\Http\Controllers\UserController::class, 'creditcard'])->name('user-creditcard');
+Route::post('/user/credit/card/add', [App\Http\Controllers\UserController::class, 'addcreditcard'])->name('user-addcreditcard');
+
+
 
